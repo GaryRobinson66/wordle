@@ -2,7 +2,7 @@
 
 Welcome to the Wordle Game project! This web-based game was created to challenge users' word-guessing abilities while providing an engaging and interactive experience. The project is primarily built using HTML, CSS, and JavaScript.
 
-## url
+## Video preview
 
 https://www.youtube.com/watch?v=rTC1sRRyoSY
 
