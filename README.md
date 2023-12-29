@@ -1,32 +1,68 @@
 # Wordle Game Project
 
-## Video Demo
+Welcome to the Wordle Game project! This web-based game was created to challenge users' word-guessing abilities while providing an engaging and interactive experience. The project is primarily built using HTML, CSS, and JavaScript.
 
-[Watch the Video Demo](https://youtu.be/rTC1sRRyoSY)
+## url
+
+https://www.youtube.com/watch?v=rTC1sRRyoSY
 
 ## Project Description
 
-For my CS50 final project, I set out to enhance my knowledge of JavaScript, an area where I had limited experience. I chose to create a game as a practical way to deepen my understanding of JavaScript, opting for Wordle due to its coding complexity.
+### For my CS50 final project, I aimed to learn more about JavaScript as I felt it was an area where I had little knowledge. I decided that creating a game would be a great way to delve deeper into JavaScript. I chose Wordle as the game, as it requires a certain level of coding complexity that I could learn from.
 
-### Game Overview
+### In the game, the user is expected to discover the five-letter word, which is the answer. As the user attempts to solve the puzzle, hints will be provided with letters colored in yellow or green. When the user correctly answers the puzzle, the page's answer will turn green, and the user will be presented with a refresh button to start a new game. If the user enters an invalid word, the game will display an error message and prompt the user to start a new game.
 
-The objective of the game is for the user to discover the five-letter word, which serves as the answer. Throughout the game, the user makes attempts to solve the puzzle, receiving hints in the form of colored letters (yellow or green). Upon successfully solving the puzzle, the answer section on the page turns green, and the user is provided with a refresh button to start a new game.
+## Project Structure
 
-### Gameplay Features
+The project consists of the following key files:
 
-- **Hint System:** Colored letters (yellow or green) provide clues to the user.
-- **Victory Display:** When the user correctly solves the puzzle, the answer section turns green.
-- **Error Handling:** In case of an invalid word entry, the game displays an error message, prompting the user to start a new game.
+### 1. `index.html`
 
-### Learning Focus
+The main HTML file (`index.html`) serves as the entry point for the game. It defines the structure of the game board, including the header, main board, refresh button, and footer. The file also links to external CSS styles (`styles.css`) and JavaScript logic (`script.js`).
 
-This project served as a valuable learning experience in JavaScript, allowing me to tackle real-world coding challenges and improve my skills. The complexity of Wordle provided an excellent opportunity to delve deeper into the language.
+### 2. `styles.css`
 
-## How to Play
+The CSS file (`styles.css`) contains styling rules for various elements within the game. It defines the appearance of the game board, tiles, keyboard, and other UI components. The use of flexbox and grid layouts ensures a responsive and visually appealing design.
 
-1. Attempt to guess the five-letter word.
-2. Receive hints through colored letters.
-3. Successfully solve the puzzle to turn the answer section green.
-4. In case of an invalid word, follow the on-screen instructions to start a new game.
+### 3. `script.js`
 
-Feel free to check out the video demo for a visual walkthrough of the game.
+### **Initialization and Setup**
+
+The JavaScript file (`script.js`) begins by initializing variables such as the board dimensions (`height` and `width`), current row and column (`row` and `col`), and the game state (`gameOver`). The `word` variable holds the target word that the player needs to guess, initially set to "FRAME." Additionally, the `guessList` array contains possible valid words for the game. The `window.onload` event triggers the `initialize()` function once the page is fully loaded.
+
+### **Board Initialization**
+
+The `initialize()` function sets up the game board on the HTML page. It creates a grid of tiles where the player can input their guesses.
+
+### **Keyboard Input Processing**
+
+The `processKey()` function is called when a key on the on-screen keyboard is clicked. It handles the logic for processing the input, including adding letters to the board and handling special keys like "Enter" and "Backspace."
+
+### **Main Game Logic**
+
+The `update()` function is crucial for updating the game state after each guess. It checks the validity of the word, identifies correct and incorrect letters, and updates the visual representation of the board.
+
+### **Showing the Refresh Button**
+
+The `showRefreshButton()` function is called when the game is over. It displays the "New Game!" button, allowing the player to reset the game.
+
+These are the key functions and logic snippets in the `script.js` file. The code is structured to be readable and modular, making it easy to understand and modify. The script handles user input, updates the game state, and provides feedback to create an interactive gaming experience. Feel free to explore and experiment with the code to deepen your understanding of JavaScript in the context of a real-world project.
+
+## Design Choices
+
+### 1. Responsive Design
+
+The project incorporates a responsive design approach to ensure an optimal gaming experience on various screen sizes. Flexbox and grid layouts were chosen for their simplicity and effectiveness in arranging UI elements.
+
+### 2. Game Logic
+
+The game logic is implemented to facilitate a smooth and interactive user experience. Users can input letters via an on-screen keyboard, and the game provides real-time feedback on correct and incorrect guesses. The design allows for easy customization of the game parameters such as board dimensions and word lists.
+
+### 3. Learning Focus
+
+The primary goal of this project was to learn JavaScript. As a result, certain design choices, such as the structure of the code and the use of event listeners, were made to reinforce fundamental JavaScript concepts. The project serves as a practical application of JavaScript skills gained during the learning process.
+
+## Getting Started
+
+To start playing the Wordle game, simply open the `index.html` file in a web browser. The game will load, and you can begin guessing the hidden word. If needed, the game can be reset using the "New Game!" button.
+
