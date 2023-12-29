@@ -8,9 +8,9 @@ https://www.youtube.com/watch?v=rTC1sRRyoSY
 
 ## Project Description
 
-### For my CS50 final project, I aimed to learn more about JavaScript as I felt it was an area where I had little knowledge. I decided that creating a game would be a great way to delve deeper into JavaScript. I chose Wordle as the game, as it requires a certain level of coding complexity that I could learn from.
+### For my CS50 final project, I aimed to learn more about JavaScript as I felt it was an area where I had little knowledge. I decided that creating a game would be a great way to delve deeper into JavaScript. I chose Wordle as the game, as it requires a moderate level of coding complexity that I could learn from without being discouraged.
 
-### In the game, the user is expected to discover the five-letter word, which is the answer. As the user attempts to solve the puzzle, hints will be provided with letters colored in yellow or green. When the user correctly answers the puzzle, the page's answer will turn green, and the user will be presented with a refresh button to start a new game. If the user enters an invalid word, the game will display an error message and prompt the user to start a new game.
+### In the game, the user is given multiple attempts to guess a five-letter word. As the user attempts to solve the puzzle by submitting possible answers, hints will be provided with letters colored in yellow or green if the letters are guessed correctly. When the user correctly answers all five letters and completes the puzzle, the answer will turn green, and the user will be presented with a refresh button to start a new game. If the user enters an invalid word, the game will display an error message and prompt the user to start a new game.
 
 ## Project Structure
 
